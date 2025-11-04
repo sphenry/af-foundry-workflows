@@ -1,0 +1,27 @@
+platforms:
+  twitter:
+    api_key: "${TWITTER_API_KEY}"
+    api_secret: "${TWITTER_API_SECRET}"
+    rate_limit: 300
+  
+  reddit:
+    client_id: "${REDDIT_CLIENT_ID}"
+    client_secret: "${REDDIT_CLIENT_SECRET}"
+    user_agent: "ZavaCommunityPulse/1.0"
+  
+  discord:
+    bot_token: "${DISCORD_BOT_TOKEN}"
+    guild_ids: ["123456789", "987654321"]
+
+monitoring:
+  interval_minutes: 30
+  sentiment_threshold: 0.7
+  engagement_threshold: 0.5
+  
+alerts:
+  email: "community@zava.com"
+  slack_webhook: "${SLACK_WEBHOOK_URL}"
+  
+database:
+  connection_string: "${DATABASE_URL}"
+  table_prefix: "community_pulse_"

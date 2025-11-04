@@ -1,0 +1,43 @@
+design_system:
+  brand_colors:
+    primary: "#007bff"
+    secondary: "#6c757d"
+    success: "#28a745"
+    warning: "#ffc107"
+    danger: "#dc3545"
+  
+  typography:
+    font_family: "Inter, Arial, sans-serif"
+    font_sizes: [12, 14, 16, 18, 24, 32, 48]
+    line_heights: [1.2, 1.4, 1.6, 1.8]
+  
+  spacing:
+    base_unit: 8
+    scale: [4, 8, 16, 24, 32, 48, 64, 96]
+
+analytics:
+  google_analytics_id: "${GA_TRACKING_ID}"
+  mixpanel_token: "${MIXPANEL_TOKEN}"
+  hotjar_id: "${HOTJAR_SITE_ID}"
+
+design_tools:
+  figma:
+    api_token: "${FIGMA_API_TOKEN}"
+    team_id: "${FIGMA_TEAM_ID}"
+  
+  sketch:
+    workspace_id: "${SKETCH_WORKSPACE_ID}"
+
+ab_testing:
+  optimizely:
+    project_id: "${OPTIMIZELY_PROJECT_ID}"
+    api_key: "${OPTIMIZELY_API_KEY}"
+  
+  confidence_threshold: 0.95
+  minimum_sample_size: 1000
+
+accessibility:
+  wcag_level: "AA"
+  color_contrast_ratio: 4.5
+  screen_reader_testing: true
+  keyboard_navigation: true
